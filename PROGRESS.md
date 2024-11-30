@@ -2,7 +2,9 @@
 ## Test 1
 
 **Filename: test_1.py**
+<br />
 Reference image given: Datasets/VP001/ref_img/can_1.jpg
+<br />
 Target image given: Datasets/VP001/1.jpg
 
 **Observation**

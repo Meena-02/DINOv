@@ -62,6 +62,7 @@ model_sam = BaseModel(opt, build_model(opt)).from_pretrained(args.ckpt).eval().c
 @torch.no_grad()
 def inference(generic_vp1, generic_vp2, generic_vp3, generic_vp4,
                    generic_vp5, generic_vp6, generic_vp7, generic_vp8, image2,*args, **kwargs):
+    print(generic_vp1['mask'].mode)
     with torch.autocast(device_type='cuda', dtype=torch.float16):
         model=model_sam
         a= task_openset(model, generic_vp1, generic_vp2, generic_vp3, generic_vp4,

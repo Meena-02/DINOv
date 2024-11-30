@@ -42,7 +42,7 @@ def inference(generic_vp1, image2,*args, **kwargs):
         a= task.task_openset(model, generic_vp1, None, None, None,
                    None, None, None, None, image2, *args, **kwargs)
         img = Image.fromarray(a)
-        img.save(f'/home/rse/prog/Code/DINOv/test1/' + 'test_1.jpg')
+        img.save(f'/home/rse/prog/Code/DINOv/test_results/' + 'test_1.jpg')
         return a
 
 inference(generic_vp1,target_img)
